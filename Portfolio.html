@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+<link rel="stylesheet" href="./Portfolio_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Portfolio_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Portfolio_files/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+<body>
+  <section class="hero"> 
+  <nav>
+    <img class="logo" src="./Portfolio_files/logo-1.png" alt="My logo">
+    <div class="socials">
+    <div><i class="fa-brands fa-instagram fa-2x"></i></div> <div></div>
+     <div><i class="fa-brands fa-github fa-2x"></i></div> 
+     <div><i class="fa-brands fa-linkedin fa-2x"></i></div> 
+    </div>
+    <ul>
+        <li>About me</li>
+        <li>Projects</li>
+        <li>Contact</li>
+    </ul>
+  </nav>
+  <div class="hero-area">
+  <div class="hero-text">
+   <h1>Emily Hancock</h1>
+   <p>Freelance Web Developer</p>
+   <div class="button">About me</div>
+  </div>
+</div>
+</section> 
+  <section class="sub-section">
+<div class="information">
+<h2>About Me</h2>
+<p>Hello. My name is Emily. I am a Web Developer.</p>
+</div>
+
+<div class="headshot-container"> </div>
+<img class="headshot" src="./Portfolio_files/woman.png" alt="My picture">
+  </section>
+  <section class="sub-section-alternative">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project card"></div>
+      <img class="progect-image" src="./Portfolio_files/project5.jpeg" alt="project one image">
+      <h3>Project one</h3>
+      <p class="subtext"> My first web site. I enjoyed making this project.</p>
+      <hr>
+      <p class="subtext"><a class="project-link" href="https://github.com/"> View here</a></p>
+
+      <div class="project card"></div>
+      <img class="progect-image" src="./Portfolio_files/project6.jpeg" alt="project two image">
+      <h3>Project two</h3>
+      <p class="subtext"> My second web site. I enjoyed making this project.</p>
+      <hr>
+      <p class="subtext"><a class="project-link" href="https://github.com/"> View here</a></p>
+
+      <div class="project card"></div>
+      <img class="progect-image" src="./Portfolio_files/project7.jpeg" alt="project three image">
+      <h3>Project three</h3>
+      <p class="subtext"> My third web site. I enjoyed making this project.</p>
+      <hr>
+      <p class="subtext"><a class="project-link" href="https://github.com/"> View here</a></p>
+
+      <div class="project card"></div>
+      <img class="progect-image" src="./Portfolio_files/project8.jpeg" alt="project four image">
+      <h3>Project four</h3>
+      <p class="subtext"> My fourth web site. I enjoyed making this project.</p>
+      <hr>
+      <p class="subtext"><a class="project-link" href="https://github.com/"> View here</a></p>
+    </div>
+  </section>
+  <footer></footer>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
